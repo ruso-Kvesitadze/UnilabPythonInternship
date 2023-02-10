@@ -1,0 +1,29 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+
+
+
+
+
+    <div style="margin-left: 40%">
+
+        <p style="color: blueviolet; font-size: 30px; margin-left: 90px;">
+            Sign In
+        </p>
+
+        <form method="POST">
+            {{ register_form.hidden_tag() }}
+            {{ register_form.username (class="input-group mb-3", placeholder="Username", style="width: 300px; margin-left: 6px; color: violet") }}
+            {{ register_form.email (class="input-group mb-3", placeholder="Email", style="width: 300px; margin-left: 6px; color: violet") }}
+            {{ register_form.password (class="input-group mb-3", placeholder="Password", style="width: 300px; margin-left: 6px; color: violet") }}
+            {{ register_form.confirm_password (class="input-group mb-3", placeholder="Re-enter Password", style="width: 300px; margin-left: 6px; color: violet") }}
+            {{ register_form.submit (style = "margin-left:100px") }}
+
+
+        </form>
+
+
+        <div/>
+
+
+{% endblock %}
